@@ -6,8 +6,8 @@ Hi-score'''
 import random
 
 def game():
-    print("You areplaying the game..")
-    score = random.randint(1,62)
+    print("You are playing the game..")
+    score = random.randint(1,100)
     #Fetch the hiscore from the file
     with open("hiscore.txt") as f:
         hiscore = f.read()
