@@ -26,13 +26,13 @@ class Student:
 
 #object - instance of class
 student1 = Student('Anand', 12, 96)
-# print(student1.name, student1.grade)
+#print(student1.name, student1.grade)
 
 student2 = Student('Aditi', 10, 98)
-# print(student2.name, student2.grade)
+#print(student2.name, student2.grade)
 
-# student1.student_details()
-# student2.student_details()
+student1.student_details()
+student2.student_details()
 # print(student1.name)
 
 # print(student1.__dict__)
