@@ -29,8 +29,21 @@ class BankAccount:
     def Check_balance(self):
         print(f"Current Balance : {self.__balance}")
 
-b1 = BankAccount("Anand", 1234, 15000000)
+class Saving_account(BankAccount):
+    def __init__(self, name, acc_no, balance):
+        super().__init__(name, acc_no, balance)
+        self.interest_rate = 4
 
+    def add_interest(self):
+        interest = (self.__balance)*(self.interest_rate)/100
+        self.__balance += interest
+        print(f"Interest Added: {interest}")
+        print(f"New Balance: {self.__balance}")
+
+
+b1 = BankAccount("Anand", 1234, 15000000)
+b2 = Saving_account("Anand", 1234, 15000000)
+b2.add_interest()
 
 while True:
     print("\n===== Bank Management System =====")
