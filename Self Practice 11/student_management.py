@@ -62,7 +62,7 @@ while True:
 
     elif choice == "2":
         view_students()
-
+ 
     elif choice == "3":
         print("Program Closed")
         break

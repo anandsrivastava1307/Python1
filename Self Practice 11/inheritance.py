@@ -3,8 +3,7 @@ class Product:
         self.name = name
         self.price = price
 
-    def show_details(self):
-        
+    def show_details(self):    
         print(f"Product: {self.name}, Price: {self.price}")
 
 class Electronics(Product):

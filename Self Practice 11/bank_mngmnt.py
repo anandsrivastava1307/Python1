@@ -35,11 +35,11 @@ class Saving_account(BankAccount):
         self.interest_rate = 4
 
     def add_interest(self):
-        interest = (self.__balance)*(self.interest_rate)/100
-        self.__balance += interest
+        balance = self.get_balance()
+        interest = balance * self.interest_rate / 100
+        self.set_balance(balance + interest)
         print(f"Interest Added: {interest}")
-        print(f"New Balance: {self.__balance}")
-
+        print(f"New Balance: {self.get_balance()}")
 
 b1 = BankAccount("Anand", 1234, 15000000)
 b2 = Saving_account("Anand", 1234, 15000000)
